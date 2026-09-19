@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- تگ‌های سئو و کلماتی که می‌خواهید گوگل با سرچ آن‌ها سایت شما را بیاورد -->
-    <title>هیروبراین کرفت | HerobrineCraft - مرجع رسمی دنیای انیمیشن</title>
-    <meta name="description" content="سایت رسمی هیروبراین کرفت (HerobrineCraft) مرجع توسعه وب و پروژه‌های دیجیتال. ورود به سایت دنیای انیمیشن و مشاهده محصولات ما.">
-    <meta name="keywords" content="هیروبراین, هیروبراین کرفت, Herobrine, HerobrineCraft, دنیای انیمیشن">
+    <title>هیروبراین کرفت | HerobrineCraft - مرجع رسمی پروژه‌ها</title>
+    <meta name="description" content="سایت رسمی هیروبراین کرفت (HerobrineCraft) مرجع توسعه وب، بازی CecilHotel، دنیای انیمیشن و پروژه‌های دیجیتال.">
+    <meta name="keywords" content="هیروبراین, هیروبراین کرفت, Herobrine, HerobrineCraft, CecilHotel, دنیای انیمیشن">
     <meta name="author" content="HerobrineCraft">
 
-    <!-- Open Graph برای شبکه‌های اجتماعی -->
-    <meta property="og:title" content="هیروبراین کرفت | HerobrineCraft">
-    <meta property="og:description" content="مرجع رسمی پروژه دنیای انیمیشن و وب‌سایت‌های تخصصی هیروبراین کرفت.">
-    <meta property="og:type" content="website">
-
-    <!-- آیکون سایت اصلی -->
     <link rel="icon" type="image/jpeg" href="ico/1.jpg">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     
@@ -34,7 +27,6 @@
             scroll-behavior: smooth;
         }
 
-        /* هدر و منو */
         header {
             position: fixed;
             top: 0;
@@ -78,7 +70,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 40px;
+            gap: 30px;
         }
 
         nav ul li a {
@@ -94,7 +86,6 @@
             text-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
         }
 
-        /* بخش اصلی با اسلایدهای مورب */
         .hero {
             position: relative;
             width: 100%;
@@ -103,32 +94,7 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            background: #000;
-        }
-
-        .diagonal-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            transform: skewX(-15deg) scale(1.2);
-            filter: brightness(0.6);
-        }
-
-        .diagonal-slide {
-            flex: 1;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            transition: 0.5s ease;
-            position: relative;
-        }
-
-        .diagonal-slide:hover {
-            flex: 2;
-            filter: brightness(1);
+            background: url('media/7878.png') no-repeat center center/cover;
         }
 
         .hero-overlay {
@@ -137,7 +103,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.95));
+            background: linear-gradient(to bottom, rgba(11, 15, 25, 0.6), rgba(11, 15, 25, 0.95));
             z-index: 2;
         }
 
@@ -181,7 +147,6 @@
             box-shadow: 0 8px 25px rgba(255, 87, 34, 0.7);
         }
 
-        /* بخش سایت */
         .site-section {
             padding: 100px 8%;
             background-color: #0b0f19;
@@ -234,8 +199,8 @@
         }
 
         .site-icon {
-            width: 70px;
-            height: 70px;
+            width: 100%;
+            height: 180px;
             border-radius: 12px;
             object-fit: cover;
             border: 2px solid #ff5722;
@@ -268,7 +233,6 @@
 </head>
 <body>
 
-    <!-- هدر و منو -->
     <header>
         <a href="#home" class="logo-link">
             <img src="ico/1.jpg" alt="لوگو">
@@ -277,41 +241,43 @@
         <nav>
             <ul>
                 <li><a href="#home">خانه</a></li>
-                <li><a href="#site">بخش سایت</a></li>
+                <li><a href="#projects">پروژه‌ها</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- بخش اول (خانه) با اسلایدهای مورب -->
     <section id="home" class="hero">
-        <div class="diagonal-container">
-            <div class="diagonal-slide" style="background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80');"></div>
-            <div class="diagonal-slide" style="background-image: url('https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80');"></div>
-            <div class="diagonal-slide" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80');"></div>
-            <div class="diagonal-slide" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80');"></div>
-        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>هیروبراین کرفت (HerobrineCraft)</h1>
-            <p>مرجع رسمی توسعه وب، سرگرمی و پروژه‌های دیجیتال.</p>
-            <a href="#site" class="btn">مشاهده پروژه ما</a>
+            <p>مرجع رسمی توسعه وب، سرگرمی، گیم و پروژه‌های دیجیتال.</p>
+            <a href="#projects" class="btn">مشاهده‌ی پروژه‌ها</a>
         </div>
     </section>
 
-    <!-- بخش سایت -->
-    <section id="site" class="site-section">
-        <h2 class="section-title">بخش سایت</h2>
+    <section id="projects" class="site-section">
+        <h2 class="section-title">پروژه‌های ما</h2>
         <div class="card-container">
+            
+            <!-- کارت بازی CecilHotel با لینک سایت اختصاصی خودش -->
+            <div class="site-card">
+                <img src="media/my-game-bg.jpg" alt="CecilHotel" class="site-icon">
+                <h3>CecilHotel</h3>
+                <p>یک تجربه ترسناک روانشناختی در راهروهای تاریک و اسرارآمیز.</p>
+                <a href="https://itsalikohan.github.io/cecilhotelweb/" target="_blank" class="btn" style="padding: 10px 25px; font-size: 14px;">جزئیات بازی</a>
+            </div>
+
+            <!-- کارت دنیای انیمیشن -->
             <div class="site-card">
                 <img src="media/دنیای انیمیشن/1.png" alt="دنیای انیمیشن" class="site-icon">
                 <h3>دنیای انیمیشن</h3>
-                <p>تنها وب‌سایت رسمی ما با تمرکز بر معرفی، بررسی و دنیای جذاب انیمیشن‌ها.</p>
+                <p>با تمرکز بر معرفی، بررسی و دنیای جذاب انیمیشن‌ها.</p>
                 <a href="https://itsalikohan.github.io/animationworld/index.html" target="_blank" class="btn" style="padding: 10px 25px; font-size: 14px;">ورود به سایت</a>
             </div>
+
         </div>
     </section>
 
-    <!-- فوتر -->
     <footer>
         <p>تمامی حقوق محفوظ است &copy; 2026 | هیروبراین کرفت (HerobrineCraft)</p>
     </footer>
